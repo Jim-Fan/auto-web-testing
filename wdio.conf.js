@@ -17,11 +17,12 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/specs/example.test.js'
+        './test/specs/coupon-landing-page.test.js'
     ],
     suites: {
     },
     exclude: [
+        './test/specs/example.test.js'
     ],
     //
     // ============
@@ -57,6 +58,8 @@ exports.config = {
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
+
+        acceptInsecureCerts : true,
     }],
     //
     // ===================
